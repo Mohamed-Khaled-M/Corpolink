@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #30c39e;
+  --secondary-color: #192d35;
+  --heading-color: #2c3038;
+  --bg-color: #fff;
+  --bg-light: rgba(93, 196, 158, .03);
+  --bg-grey: #f7f7f7;
+  --card-bg: #fff;
+  --font-color: #696969;
+  --border-color: #ddd;
+  --nav-color: #292922;
+  --dropdown-color: #fff;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --black: #000;
+  --gray: #6c757d; // secondary
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+.dark {
+  --font-color: #ccc;
+  --bg-color: #1e1b32;
+  --bg-light: rgba(130, 115, 252, .05);
+  --bg-grey: #26243c;
+  --heading-color: #eee;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --nav-color: #fff;
+  --dropdown-color: #26243c;
+  --iframe-filter: grayscale(100%);
+  --card-bg: #26243c;
+}
+
+$border-radius: 6px;
+$iframe-filter: grayscale(0%);
+$default-font: 1.6rem;
+$transition-time: 0.3s;

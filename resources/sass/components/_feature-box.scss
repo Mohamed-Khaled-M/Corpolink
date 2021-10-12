@@ -1,0 +1,160 @@
+.features {
+  &__image {
+    max-width: 90%;
+  }
+
+  .child:first-of-type &__box {
+    ::selection {
+      background-color: #F85A40;
+    }
+
+    @media (max-width: 992px) {
+      border-top: 3px solid #F85A40;
+
+      &::after,
+      &::before {
+        border: none !important;
+      }
+    }
+
+    &::before,
+    &::after {
+      border: 3px solid #F85A40;
+    }
+  }
+
+  .child:nth-of-type(2) &__box {
+    ::selection {
+      background-color: #7AC142;
+    }
+
+    @media (max-width: 992px) {
+      border-top: 3px solid #7AC142;
+
+      &::after,
+      &::before {
+        border: none !important;
+      }
+    }
+
+    &::before,
+    &::after {
+      border: 3px solid #7AC142;
+    }
+  }
+
+  .child:nth-of-type(3) &__box {
+    ::selection {
+      background-color: #4073E8;
+    }
+
+    @media (max-width: 992px) {
+      border-top: 3px solid #4073E8;
+
+      &::after,
+      &::before {
+        border: none !important;
+      }
+    }
+
+    &::before,
+    &::after {
+      border: 3px solid #4073E8;
+    }
+  }
+
+  .child:last-of-type &__box {
+    ::selection {
+      background-color: #FE4E81;
+    }
+
+    @media (max-width: 992px) {
+      border-top: 3px solid #FE4E81;
+
+      &::after,
+      &::before {
+        border: none !important;
+      }
+    }
+
+    &::before,
+    &::after {
+      border: 3px solid #FE4E81;
+    }
+  }
+
+  &__box {
+    background-color: var(--bg-color);
+    padding: 3rem 1.5rem;
+    border-radius: $border-radius;
+    transition: $transition-time;
+    position: relative;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-gap: 1.5rem;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      transition: $transition-time;
+      border-radius: $border-radius;
+      visibility: hidden;
+      z-index: -1;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      border-right: 0 !important;
+      border-bottom: 0 !important;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      border-left: 0 !important;
+      border-top: 0 !important;
+    }
+
+    &:hover {
+
+      &::before,
+      &::after {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+      }
+    }
+
+    &--text {
+      margin-left: 2rem;
+    }
+  }
+
+}
+
+.guiding {
+
+  &__box {
+    padding: 4rem 3rem;
+    transition: $transition-time;
+    border-radius: $border-radius;
+
+    &--icon {
+      margin-bottom: 2rem;
+
+      i {
+        font-size: 3rem;
+        color: var(--primary-color);
+      }
+    }
+
+    &.shadow {
+      box-shadow: 0 1rem 9rem rgba(black, .1);
+    }
+  }
+}

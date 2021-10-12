@@ -1,0 +1,47 @@
+.btn-primary {
+
+  &,
+  &:link,
+  &:visited {
+    border: none;
+    outline: none;
+    padding: 1.5rem 2.5rem;
+    border-radius: $border-radius;
+    transition: $transition-time;
+    display: inline-block;
+    cursor: pointer;
+    font-size: $default-font;
+  }
+
+}
+
+.btn-info {
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  &:hover {
+    background-color: #28A485;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 1.4rem 2.4rem !important;
+
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--black);
+  }
+}

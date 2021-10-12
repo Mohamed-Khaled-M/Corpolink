@@ -1,0 +1,13 @@
+.benefits {
+  padding: 0 1rem;
+
+  li {
+    padding: .5rem 0;
+    font-weight: 650;
+    i {
+      display: inline-block;
+      color: var(--primary-color);
+      margin-right: 1.5rem;
+    }
+  }
+}

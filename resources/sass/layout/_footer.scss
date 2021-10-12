@@ -1,0 +1,23 @@
+.footer {
+  background-color: #1e1b32;
+
+  &__list {
+
+    &--item {
+      color: #a3a3a3;
+      &:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: inherit;
+        transition: $transition-time;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

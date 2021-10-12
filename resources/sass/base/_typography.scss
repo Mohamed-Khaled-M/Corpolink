@@ -1,0 +1,53 @@
+html,
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  letter-spacing: -1px;
+}
+
+.title-small {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.secondary-heading {
+  font-size: 3.7rem;
+  font-weight: 700;
+  line-height: 1.6;
+
+  @media (max-width: 1200px) {
+    font-size: 3.3rem;
+  }
+}
+
+.tertiary-heading {
+  font-size: 2.1rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.fourth-heading {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.progress-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  color: var(--font-color);
+}

@@ -1,0 +1,66 @@
+.team-section {
+
+  &__member {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        opacity: 1;
+        backdrop-filter: blur(3px);
+      }
+
+      .team-section__member--links {
+        transform: translateY(0);
+      }
+    }
+
+    &--image {
+      height: 100%;
+      border-radius: $border-radius;
+      display: block;
+      transition: $transition-time;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(20, 20, 20, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: $transition-time;
+    }
+
+    &--links {
+      transform: translateY(5rem);
+      transition: $transition-time;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: $default-font + .5;
+        width: 5rem;
+        height: 5rem;
+        background-color: rgba(157, 157, 157, 0.5);
+        border-radius: 50%;
+        transition: $transition-time;
+
+        &:not(:last-of-type) {
+          margin-right: 1rem;
+        }
+
+        &:hover {
+          background-color: var(--white);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

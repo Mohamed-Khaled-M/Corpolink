@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 1200px) {
+    font-size: 60%;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 56%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 48%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: $default-font;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--font-color);
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+a {
+
+  &,
+  &:link,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  @media (max-width: 576px) {
+    padding: 0 3rem;
+  }
+}

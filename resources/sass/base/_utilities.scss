@@ -1,0 +1,26 @@
+.section-padding {
+  padding: 8rem 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-medium {
+  margin-bottom: 5rem;
+
+  @media (max-width: 992px) {
+    margin-bottom: 3rem;
+  }
+}
+.mb-large {
+  margin-bottom: 10rem;
+
+  @media (max-width: 992px) {
+    margin-bottom: 8rem;
+  }
+}
